@@ -2,8 +2,9 @@ import './weather.css'
 import { useState } from 'react'
 import { WiDaySunny, WiCloud, WiRain, WiSnow, WiThunderstorm, WiFog } from 'react-icons/wi';
 
+const apiKey = import.meta.env.VITE_KEY_API_WEATHER
 const apiWeather = {
-    key: 'b73ce08ce5cc2d301f53497273cdf750',
+    key: apiKey,
     base: 'https://api.openweathermap.org/data/2.5/',
 }
 
